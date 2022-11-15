@@ -1,0 +1,87 @@
+baseURL = "https://blog.srizan.ml"
+languageCode = "en"
+DefaultContentLanguage = "en"
+title = "my blog"
+paginate = 10
+theme = "hulga"
+
+[params]
+  # show in HTML meta tag
+  author = "Sr Izan"
+  keywords = "hugo, ts"
+  description = "Sr Izan's goofy ahh blog"
+
+  # change bulma's primary color
+  primaryColor = "#1793d0"
+
+  # subtitle on homepage
+  subtitle = "insert subtitle"
+
+  # copyright text on footer
+  copyright = "Copyright © 2022 me, myself and I."
+
+  # enable katex rendering on every post page, default false
+  math = false
+
+  # enable postcss, mainly for css purge (129kB->20kB->4.8kB gzipped, but this makes build slower), default false
+  postcss = true
+
+  # enable showing content summary below post title in home page, default false
+  showSummary = true
+
+  # set paginate on taxonomy term page (tags or categories), default 10
+  termPaginate = 3
+
+  # enable toc on every post page, default false
+  toc = true
+
+  # enable TOC auto collapse, default false
+  autoCollapseToc = true
+
+  # enable prefers-color-scheme:dark, default false
+  darkMedia = true
+
+  # enable hero section's is-bold effect, default false
+  heroBold = false
+
+  # enable hero section that looks like steam deck's home page, default false
+  heroSteamDeck = false
+
+  # disable jsdelivr cdn, default false
+  noCDN = false
+
+# to enable different hightlight themes in light/dark mode 
+[markup]
+  [markup.highlight]
+    noClasses = false
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "archives"
+    name = "archives"
+    url = "/archives/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    url = "/about/"
+    weight = 3
+  [[menu.main]]
+    identifier = "tags"
+    name = "tags"
+    url = "/tags/"
+    weight = 4
+  [[menu.main]]
+    identifier = "categories"
+    name = "categories"
+    url = "/categories/"
+    weight = 5
+
+[taxonomies]
+category = "categories"
+tag = "tags"
